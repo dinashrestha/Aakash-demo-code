@@ -79,23 +79,13 @@ function Friend() {
             </div>
             <div>
               <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="w-full p-2 border rounded-lg bg-gray-200 text-gray-700"
-                value={formData.email}
+                type="email" name="email" placeholder="Email"className="w-full p-2 border rounded-lg bg-gray-200 text-gray-700"value={formData.email}
                 onChange={handleChange}
               />
               {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
             </div>
             <div>
-              <input
-                type="tel"
-                name="contactNumber"
-                placeholder="Contact Number"
-                className="w-full p-2 border rounded-lg bg-gray-200 text-gray-700"
-                value={formData.contactNumber}
-                onChange={handleChange}
+              <input type="tel" name="contactNumber" placeholder="Contact Number" className="w-full p-2 border rounded-lg bg-gray-200 text-gray-700"value={formData.contactNumber}  onChange={handleChange}
               />
               {errors.contactNumber && <p className="text-red-500 text-sm">{errors.contactNumber}</p>}
             </div>
