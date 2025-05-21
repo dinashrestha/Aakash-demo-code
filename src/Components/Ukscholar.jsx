@@ -1,35 +1,67 @@
 import React from 'react'
 import { useState } from "react";
-import ire from '../Assets/ireland.jpg';
-function Scholarship() {
-const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    mobile: "",
-    office: "",
-    destination: "",
-    infoConsent: false,
-  });
+import ire from '../Assets/ireland.jpg'
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: type === "checkbox" ? checked : value,
-    }));
-  };
+function Ukscholar() {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        mobile: "",
+        office: "",
+        destination: "",
+        infoConsent: false,
+      });
     
-    console.log("Submitted Data:", formData);
-    alert("Form submitted successfully!!!");
-  };
-
+      const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: type === "checkbox" ? checked : value,
+        }));
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        
+        console.log("Submitted Data:", formData);
+        alert("Form submitted successfully!!!");
+      };
   return (
-    
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="bg-white px-6 md:px-24 py-12">
+      <h1 className="text-3xl md:text-4xl font-bold text-orange-700 mb-6">
+        Study in United Kingdom Scholarships
+      </h1>
+      <p className="text-lg text-gray-700 mb-10">
+        The United Kingdom has one of the best higher education systems in the world.
+        Studying in the UK is a great opportunity that you should pursue.
+      </p>
+
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          Commonwealth Split-site PhD Scholarships
+        </h2>
+        <p className="text-gray-700 text-base">
+          This is a full funding scholarship given to international students by the government of
+          the United Kingdom. The tuition fee of the recipient is covered and they are given
+          allowances + air travel expenses.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          Chevening Scholarship
+        </h2>
+        <p className="text-gray-700 text-base">
+          This scholarship is provided to students with extraordinary academic achievements and also
+          leadership skills. The recipients of the scholarships are selected by British Embassies
+          all around the world. The recipients will receive financial aid to study a one-year
+          Master’s degree at any leading UK university of their choice. More than 1500 students
+          receive this scholarship around the world each year.
+        </p>
+      </div>
+<div className="flex justify-center items-center min-h-screen bg-gray-100">
   <div className="w-full max-w-xl bg-gray-50 p-8 rounded-lg shadow-lg">
     <div className="flex justify-center">
       <img src={ire} alt="ireland" className="rounded-xl w-full h-auto mb-5" />
@@ -41,12 +73,8 @@ const [formData, setFormData] = useState({
 
     <form className="space-y-4" onSubmit={handleSubmit}>
       <input
-        type="text"
-        name="fullName"
-        placeholder="Full Name*"
-        required
-        value={formData.fullName}
-        onChange={handleChange}
+        type="text" name="fullName" placeholder="Full Name*"  required
+        value={formData.fullName} onChange={handleChange}
         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
 
@@ -98,9 +126,8 @@ const [formData, setFormData] = useState({
     </form>
   </div>
 </div>
-
-  
+    </div>
   )
 }
 
-export default Scholarship
+export default Ukscholar

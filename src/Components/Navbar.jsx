@@ -30,11 +30,9 @@ function Navbar (){
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             
-           <NavLink
-              to="/"
+           <NavLink to="/"
               className="flex-shrink-0 text-xl font-bold text-blue-600 hover:text-orange-400 transition duration-300"
-            >
-              AAKASH INSTITUTE
+            > AAKASH INSTITUTE
             </NavLink>
 
             
@@ -43,9 +41,9 @@ function Navbar (){
               <a href="#" className="text-gray-700 hover:text-orange-400">Test Preparation</a>
                 <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300 z-50">
            <ul className="py-2 text-sm text-gray-700">
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">IELTS Preparation Classes</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">PTE preparation Classes</a></li>
-      <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">SAT Preparation Classes</a></li>
+      <li><a href="/registration" className="block px-4 py-2 hover:bg-gray-100">IELTS Preparation Classes</a></li>
+      <li><a href="/registration" className="block px-4 py-2 hover:bg-gray-100">PTE preparation Classes</a></li>
+      <li><a href="/registration" className="block px-4 py-2 hover:bg-gray-100">SAT Preparation Classes</a></li>
       
       </ul>
       </div>
@@ -71,7 +69,7 @@ function Navbar (){
 <div className="relative group">
   <a href="#" className="text-gray-700 hover:text-orange-600">Services</a>
   
-  {/* Dropdown Menu */}
+ 
   <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300 z-50">
     <ul className="py-2 text-sm text-gray-700">
       <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Student Screening</a></li>
@@ -102,7 +100,7 @@ function Navbar (){
       </ul>
       </div>
       </div>
-              <a href="#" className="text-gray-700 hover:text-orange-600">Blogs</a>
+              <a href="/blog" className="text-gray-700 hover:text-orange-600">Blogs</a>
               <div className="relative group">
               <a href="#" className="text-gray-700 hover:text-orange-600">About Us</a>
               <div className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-300 z-50">
@@ -115,11 +113,17 @@ function Navbar (){
               </div>
               <a href="#" className="text-gray-700 hover:text-orange-600">Contact Us</a>
 
-            <Link to="/scholarship">
-  <button className="bg-blue-600 text-white px-6 py-1 rounded-xl hover:bg-orange-700 transition duration-300">
+           <NavLink to="/scholarship" className={({ isActive }) => `className="bg-blue-600 text-gray-400 px-6 py-1 rounded-xl hover:bg-orange-700 transition duration-300 ${
+                              isActive ? 'text-blue-600' : ''
+                            }`
+                          }
+                        >
+                         Scholarship
+                        </NavLink>  
+  {/* <button className="bg-blue-600 text-white px-6 py-1 rounded-xl hover:bg-orange-700 transition duration-300">
     SCHOLARSHIPS
-  </button>
-</Link>
+  </button> */}
+
               
             </div>
           </div>

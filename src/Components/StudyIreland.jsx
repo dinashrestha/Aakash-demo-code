@@ -95,8 +95,6 @@ function StudyIreland() {
                 <h2 className="text-2xl font-bold mb-4">5. Work Opportunities after Graduation</h2>
                 <p className="text-gray-700">
                     Ireland’s government offers a post-study work visa to students who complete their graduation at an Irish university. This visa lets you work in Ireland for an initial period of years after which you can apply for reside in Ireland on a longer-term visa.
-
-
                 </p>
             </div>
             </div>

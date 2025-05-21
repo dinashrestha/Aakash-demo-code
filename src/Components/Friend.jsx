@@ -49,7 +49,7 @@ function Friend() {
   return (
     <div className="min-h-screen font-sans">
       <div className="flex flex-col md:flex-row gap-3 max-w-5xl mx-auto px-2 py-4">
-        {/* Left Column: Content */}
+       
         <div className="w-full md:w-2/3">
           <p className="text-gray-700 leading-relaxed">
             Australia has an education system, globally recognized, for its high quality, creative approaches and its friendly atmosphere towards the non-local students. The Level 1 universities in Australia are considered to be the measure of academic success for all the ambitious Nepalese students who like to spread out their academic horizons and to achieve individual growth besides global recognition.
@@ -66,7 +66,6 @@ function Friend() {
           </p>
         </div>
 
-        {/* Right Column: Form */}
         <div className="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-semibold mb-2 text-gray-800">
             Achieve your progressive academic ambitions with Aakash.
@@ -96,7 +95,7 @@ function Friend() {
         </div>
       </div>
 
-      {/* Footer */}
+  
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>

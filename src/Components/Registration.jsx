@@ -1,6 +1,7 @@
 import React from 'react'
 import girll from'../Assets/girl.jpg';
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 
 function Registration() {
@@ -91,10 +92,11 @@ function Registration() {
           <input type="checkbox" name="infoConsent"  checked={formData.infoConsent} onChange={handleChange} className="mt-1"  />
           <span>Yes, I would like to receive information on study abroad news and events from The Aakash.</span>
         </label>
-
+        
         <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-orange-600 transition duration-200" >
           Submit
         </button>
+       
       </form>
     </div>
   </div>

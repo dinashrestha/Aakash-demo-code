@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -19,9 +20,20 @@ function Footer() {
   <h2 className="text-xl font-semibold mb-4 text-orange-600">Scholarships</h2>
   <ul className="space-y-2 text-gray-300 text-sm">
     <li className="hover:text-orange-400 cursor-pointer transition-colors">Study in Australia Scholarships</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Study in Canada Scholarships</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Study in New Zealand Scholarships</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Study in United Kingdom Scholarships</li>
+    <li>
+      <Link to="/canadascholar" className="hover:text-orange-400 cursor-pointer transition-colors">
+        Study in New Zealand Scholarships
+      </Link>
+    </li>
+    <li>
+      <Link to="/newzscholar" className="hover:text-orange-400 cursor-pointer transition-colors">
+        Study in New Zealand Scholarships
+      </Link>
+    </li>
+    <li>
+     <Link to="/uk-scholarships" className="hover:text-orange-400 cursor-pointer transition-colors">
+        Study in United Kingdom Scholarships
+      </Link></li>
   </ul>
 </div>
 

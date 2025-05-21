@@ -20,8 +20,13 @@ import Scholarship from './Components/Scholarship';
 import Learn from './Components/Learn';
 import Friend from './Components/Friend';
 import New from './Components/New';
-import newzealand from './Components/Newzealand';
+// import uk from './Components/Studyuk';
 import Newzealand from './Components/Newzealand';
+import Studyuk from './Components/Studyuk';
+import Ukscholar from './Components/Ukscholar';
+import Newzscholar from './Components/Newzscholar';
+import Canadascholar from './Components/Canadascholar';
+
 
 
 function App() {
@@ -54,6 +59,13 @@ function App() {
           <Route path='/friend' element={<Friend/>} />
           <Route path='/new' element={<New/>} />
           <Route path='/newzealand' element={<Newzealand />} />
+          <Route path='/study-uk' element={<Studyuk />}/>
+           <Route path="/registration" element={<Registration />} />
+           <Route path='/blog' element={<Blog />} />
+           <Route path="/uk-scholarships" element={<Ukscholar />} />
+          <Route path='/newzscholar' element={<Newzscholar />} />
+          <Route path='/canadascholar' element={<Canadascholar />} />
+
         </Routes>
       </div>
     </BrowserRouter>
