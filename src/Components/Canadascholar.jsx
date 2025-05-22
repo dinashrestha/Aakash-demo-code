@@ -28,36 +28,34 @@ function Canadascholar() {
   return (
     <div className="bg-white px-6 md:px-24 py-12">
       <h1 className="text-3xl md:text-4xl font-bold text-orange-700 mb-6">
-        Study in United Kingdom Scholarships
+        Study in Canada Scholarships
       </h1>
       <p className="text-lg text-gray-700 mb-10">
-        The United Kingdom has one of the best higher education systems in the world.
-        Studying in the UK is a great opportunity that you should pursue.
+        Canada is one of the most sought destinations for higher education by students from all over the world. However, studying in Canada might cost you a lot of money.
       </p>
 
-      <div className="mb-8">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          Commonwealth Split-site PhD Scholarships
-        </h2>
-        <p className="text-gray-700 text-base">
-          This is a full funding scholarship given to international students by the government of
-          the United Kingdom. The tuition fee of the recipient is covered and they are given
-          allowances + air travel expenses.
-        </p>
-      </div>
-
-      <div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-          Chevening Scholarship
-        </h2>
-        <p className="text-gray-700 text-base">
-          This scholarship is provided to students with extraordinary academic achievements and also
-          leadership skills. The recipients of the scholarships are selected by British Embassies
-          all around the world. The recipients will receive financial aid to study a one-year
-          Master’s degree at any leading UK university of their choice. More than 1500 students
-          receive this scholarship around the world each year.
-        </p>
-      </div>
+     <h2 className="text-3xl font-bold  mb-6">Steps to follow before applying for a visa.</h2>
+         <div className="space-y-2 mb-5">
+                <h3 className="text-lg font-bold ">• IDRC research awards</h3>
+                <p className='mb-3 text-gray-700'> This scholarship is given by the Canadian government to students from developing countries including Nepal, India, and other countries in the Indian sub-continent. Research support of up to $15,000 is provided. Not only that but your travel fee is also covered. The applicant must be enrolled in master or doctoral programs.</p>
+                
+                 <h3 className="text-lg font-bold ">• Vanier Canada graduate scholarship program. </h3>
+                <p className='mb-3 text-gray-700'> 
+                  Vanier Canada Graduate Scholarship program is given to 166 people in a year. The applicants should possess leadership skills and research potential in their chosen area.
+                 Value: $50,000 per year for three years
+                </p>
+                <h3 className="text-lg font-bold ">• OGS Graduate Scholarships</h3>
+                <p className='mb-3 text-gray-700'> This scholarship is provided by the Canadian government in collaboration with selected institutions. The scholarship of CAD 15,000 is provided per year for international students enrolling at the selected institutions.</p>
+                
+                 <h3 className="text-lg font-bold ">• Quebec Provincial Government Scholarship</h3>
+                <p className='mb-3 text-gray-700'>This is provided to Master’s students enrolled in the Universities located in Quebec province of Canada. The award of CAD 25,000 per year is provided to doctoral students and CAD 35,000 is provided to postdoctoral students.</p>
+           
+                 <h3 className="text-lg font-bold ">• Banting post-doctoral fellowship</h3>
+                <p className='mb-3 text-gray-700'>To apply for this scholarship, one must be enrolled in natural and social science or health research PG programs. This scholarship is awarded to 70 fellowships in a year.
+           Value: $70,000(taxable)
+           Duration: 2 years</p>
+            </div>
+        
 
       <div className="flex justify-center items-center min-h-screen bg-gray-100">
         <div className="w-full max-w-xl bg-gray-50 p-8 rounded-lg shadow-lg">
@@ -155,6 +153,7 @@ function Canadascholar() {
         </div>
       </div>
     </div>
+    
   );
 }
 

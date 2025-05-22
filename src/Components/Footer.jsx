@@ -9,20 +9,42 @@ function Footer() {
    <div>
   <h2 className="text-xl font-semibold mb-4 text-orange-600">Visa Process</h2>
   <ul className="space-y-2 text-gray-300 text-sm">
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Student Visa in UK</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Student Visa in Australia</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Student Visa in Canada</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Student Visa in New Zealand</li>
-  </ul>
+  <li>
+    <Link to="/study-uk" className="hover:text-orange-400 cursor-pointer transition-colors"
+    > Student Visa in UK
+    </Link>
+  </li>
+  <li>
+    <Link to="/study-australia" className="hover:text-orange-400 cursor-pointer transition-colors" >
+      Student Visa in Australia
+    </Link>
+  </li>
+  <li>
+    <Link to="/study-canada" className="hover:text-orange-400 cursor-pointer transition-colors"
+    >
+      Student Visa in Canada
+    </Link>
+  </li>
+  <li>
+    <Link to="/newzealand" className="hover:text-orange-400 cursor-pointer transition-colors"
+    >
+      Student Visa in New Zealand
+    </Link>
+  </li>
+</ul>
 </div>
 
 <div>
   <h2 className="text-xl font-semibold mb-4 text-orange-600">Scholarships</h2>
   <ul className="space-y-2 text-gray-300 text-sm">
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Study in Australia Scholarships</li>
+
+    <li >
+     < Link to= "/ausscholar "className="hover:text-orange-400 cursor-pointer transition-colors">Study in Australia Scholarships
+     </Link>
+     </li>
     <li>
       <Link to="/canadascholar" className="hover:text-orange-400 cursor-pointer transition-colors">
-        Study in New Zealand Scholarships
+        Study in Canada Scholarships
       </Link>
     </li>
     <li>
@@ -39,27 +61,71 @@ function Footer() {
 
 <div>
   <h2 className="text-xl font-semibold mb-4 text-orange-600">Support</h2>
-  <ul className="space-y-2 text-gray-300 text-sm">
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Study Abroad FAQs</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Blogs</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Testimonial</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Universities</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Scholarship</li>
-    <li className="hover:text-orange-400 cursor-pointer transition-colors">Interview Preparation</li>
-  </ul>
+
+
+<ul className="space-y-2 text-gray-300 text-sm">
+  <li className="hover:text-orange-400 cursor-pointer transition-colors">
+    <Link to="/header">Study Abroad FAQs</Link>
+  </li>
+  <li className="hover:text-orange-400 cursor-pointer transition-colors">
+    <Link to="/blogs">Blogs</Link> 
+  </li>
+  <li className="hover:text-orange-400 cursor-pointer transition-colors">
+    <Link to="/testimonial">Testimonial</Link>
+  </li>
+  <li className="hover:text-orange-400 cursor-pointer transition-colors">
+    <Link to="/">Universities</Link>
+  </li>
+  <li className="hover:text-orange-400 cursor-pointer transition-colors">
+    <Link to="/scholarship">Scholarship</Link>
+  </li>
+  <li className="hover:text-orange-400 cursor-pointer transition-colors">
+    <Link to="/header">Interview Preparation</Link>
+  </li>
+</ul>
+
 </div>
 
 <div>
   <h2 className="text-xl font-semibold mb-4 text-orange-600">Resources</h2>
-  <ul className="space-y-2 text-gray-300 text-sm">
-    <li className="hover:text-blue-600 cursor-pointer transition-colors">Relationship Certificate with Sponsor</li>
-    <li className="hover:text-blue-600 cursor-pointer transition-colors">Tax Clearance Certificate</li>
-    <li className="hover:text-blue-600 cursor-pointer transition-colors">Bank Balance Certificate</li>
-    <li className="hover:text-blue-600 cursor-pointer transition-colors">Salary Certificate</li>
-    <li className="hover:text-orange-600 cursor-pointer transition-colors">Sponsorship Certificate (AOS) for Australia</li>
-    <li className="hover:text-orange-600 cursor-pointer transition-colors">SOP Tips</li>
-    <li className="hover:text-orange-600 cursor-pointer transition-colors">Income Certificate</li>
-  </ul>
+ <ul className="space-y-2 text-gray-300 text-sm">
+  <li>
+    <a href="/certificate" className="hover:text-blue-600 cursor-pointer transition-colors">
+      Relationship Certificate with Sponsor
+    </a>
+  </li>
+  <li>
+    <a href="/taxsale" className="hover:text-blue-600 cursor-pointer transition-colors">
+      Tax Clearance Certificate
+    </a>
+  </li>
+  <li>
+    <a href="/banksale" className="hover:text-blue-600 cursor-pointer transition-colors">
+      Bank Balance Certificate
+    </a>
+  </li>
+  <li>
+    <a href="/salary" className="hover:text-blue-600 cursor-pointer transition-colors">
+      Salary Certificate
+    </a>
+  </li>
+  <li>
+    <a href="/sop" className="hover:text-orange-600 cursor-pointer transition-colors">
+      Sponsorship Certificate (AOS) for Australia
+    </a>
+  </li>
+  <li>
+    <a href="/sop" className="hover:text-orange-600 cursor-pointer transition-colors">
+      SOP Tips
+    </a>
+  </li>
+  <li>
+    <a href="/income-certificate" className="hover:text-orange-600 cursor-pointer transition-colors">
+      Income Certificate
+    </a>
+  </li>
+</ul>
+
 </div>
 </div>
 

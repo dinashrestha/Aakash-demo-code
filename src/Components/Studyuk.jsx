@@ -116,7 +116,7 @@ function Studyuk() {
 
 
         <h2 className="text-3xl font-bold text-center mb-6">Quality of Education in the United Kingdom</h2>
-        <p className=" italic mb-3">
+        <p className=" italic mb-3 text-center">
          The UK is one of the world’s most popular destinations to study higher education, with more than 500,000 international students enrolling each year.
         </p>
          <div className="space-y-2 ml-32">

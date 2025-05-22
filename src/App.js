@@ -26,6 +26,13 @@ import Studyuk from './Components/Studyuk';
 import Ukscholar from './Components/Ukscholar';
 import Newzscholar from './Components/Newzscholar';
 import Canadascholar from './Components/Canadascholar';
+import Ausscholar from './Components/Ausscholar';
+import Obj from './Components/Obj';
+import Certificate from './Components/Certificate';
+import Taxsale from './Components/Taxsale';
+import Banksale from './Components/Banksale';
+import Salary from './Components/Salary';
+import Sop from './Components/Sop';
 
 
 
@@ -65,8 +72,17 @@ function App() {
            <Route path="/uk-scholarships" element={<Ukscholar />} />
           <Route path='/newzscholar' element={<Newzscholar />} />
           <Route path='/canadascholar' element={<Canadascholar />} />
-
-        </Routes>
+           <Route path='/ausscholar' element={<Ausscholar />} />
+           <Route path='/obj' element={<Obj />} />
+           <Route path="/blogs" element={<Blog />} />
+           <Route path ="/testimonial" element={ <Testimonial />} />
+           <Route path ="/header" element={ <Header />} />
+           <Route path ="/certificate" element={<Certificate />} />
+           <Route path='/taxsale' element={ <Taxsale />} />
+           <Route path="/banksale" element={ <Banksale />} />
+           <Route path='/salary' element={ <Salary />} />
+           <Route path='/sop' element={<Sop />} />
+                   </Routes>
       </div>
     </BrowserRouter>
  
